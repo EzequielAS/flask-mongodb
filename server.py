@@ -3,7 +3,7 @@ from bson.json_util import dumps
 from flask_pymongo import PyMongo
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb+srv://flaskmongo:literatura0@flaskmongo.vhbwv.mongodb.net/flaskmongo?retryWrites=true&w=majority"
+app.config["MONGO_URI"] = "URL_MONGODB"
 mongo = PyMongo(app)
 
 @app.route('/', methods=['GET'])
